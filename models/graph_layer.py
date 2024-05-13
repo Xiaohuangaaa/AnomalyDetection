@@ -38,6 +38,7 @@ class GraphLayer(MessagePassing):
 
         self.reset_parameters()
 
+
     def reset_parameters(self):
         glorot(self.lin.weight)
         glorot(self.att_i)

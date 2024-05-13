@@ -24,6 +24,7 @@ def get_batch_edge_index(org_edge_index, batch_num, node_num):
     return batch_edge_index.long()
 
 
+
 class OutLayer(nn.Module):
     def __init__(self, in_num, node_num, layer_num, inter_num = 512):
         super(OutLayer, self).__init__()

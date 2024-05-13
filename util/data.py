@@ -24,6 +24,7 @@ def get_attack_interval(attack):
     # print(heads, tails)
     return res
 
+
 # calculate F1 scores
 def eval_scores(scores, true_scores, th_steps, return_thresold=False):
     padding_list = [0]*(len(true_scores) - len(scores))
@@ -50,10 +51,12 @@ def eval_scores(scores, true_scores, th_steps, return_thresold=False):
         return fmeas, thresholds
     return fmeas
 
+
 def eval_mseloss(predicted, ground_truth):
 
     ground_truth_list = np.array(ground_truth)
     predicted_list = np.array(predicted)
+
 
     
     # mask = (ground_truth_list == 0) | (predicted_list == 0)

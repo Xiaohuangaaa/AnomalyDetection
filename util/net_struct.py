@@ -12,6 +12,7 @@ def get_feature_map(dataset):
 def get_fc_graph_struc(dataset):
     feature_file = open(f'./data/{dataset}/list.txt', 'r')
 
+
     struc_map = {}
     feature_list = []
     for ft in feature_file:

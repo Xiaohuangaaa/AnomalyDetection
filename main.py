@@ -64,6 +64,7 @@ class Main():
         test_dataset_indata = construct_data(test, feature_map, labels=test.attack.tolist())
 
 
+
         cfg = {
             'slide_win': train_config['slide_win'],
             'slide_stride': train_config['slide_stride'],

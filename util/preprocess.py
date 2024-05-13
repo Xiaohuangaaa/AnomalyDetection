@@ -11,6 +11,7 @@ def get_most_common_features(target, all_features, max = 3, min = 3):
         if target == feature:
             continue
 
+
         f_keys = feature.split('_')
         common_key_num = len(list(set(f_keys) & set(main_keys)))
 

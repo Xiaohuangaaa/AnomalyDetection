@@ -14,7 +14,8 @@ def save_attack_infos(f1_scores, total_err_scores, labels, names, save_path, dat
     slide_win=config['slide_win']
     down_len=config['down_len']
 
-    
+
+
     if dataset == 'wadi' or dataset == 'wadi2':
         s = '09/10/2017 18:00:00'
     elif dataset == 'swat':

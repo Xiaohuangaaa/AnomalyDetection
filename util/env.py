@@ -13,3 +13,4 @@ def set_device(dev):
 
 def init_work(worker_id, seed):
     np.random.seed(seed + worker_id)
+
